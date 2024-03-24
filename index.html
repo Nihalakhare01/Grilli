@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilli - Amazing & Delicious Food</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="description" content="This is a Restaurant html template made by us">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svd" type="image/svg+xal">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- preload images -->
+     <link rel="preload"  as="image" href="./images/hero-slider-1.jpg">
+     <link rel="preload"  as="image" href="./images/hero-slider-2.jpg">
+     <link rel="preload"  as="image" href="./images/hero-slider-3.jpg">
+
+    </head>
+<body>
+    <!-- Loader -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Grilli</p>
+    </div>
+
+    <!-- side Navbar -->
+
+    <div class="topbar">
+        <div class="container">
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    Restaurant St, Delicious City, London 9578, Uk
+                </span>
+            </address>
+
+                <div class="separator"></div>
+
+                <div class="topbar-item item-2">
+                    <div class="icon">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Daily : 8.00 am to 10.00 pm</span>
+                </div>
+
+                <a href="tel:+91 9876543210" class="topbar-item">
+                    <div class="icon">
+                        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">+91 9876543210</span>
+                </a>
+
+                <div class="separator"></div>
+
+                <a href="mailto:+919876543210" class="topbar-item">
+                    <div class="icon">
+                        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">booking@restaurant.com</span>
+                </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <header class="header" data-header>
+
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" width="160" height="50" alt="Grilli-Home">
+            </a>
+
+            <!-- Navbar -->
+            <nav class="navbar " data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" width="160" height="50" alt="Grilli-Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li> 
+
+                    <li class="navbar-item">
+                        <a href="#menu" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#chef" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">Our Chefs</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="navbar-item">
+                        <a href="#page" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+                            <span class="span">Page</span>
+                        </a>
+                    </li> -->
+
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                        <p class="headline-1 navbar-title">Visit Us</p>
+
+                    <address class="body-4"> 
+                        Restaurant St, Delicious City, <br>
+                        London 9578 , UK
+                    </address>
+
+                    <p class="body-4 navbar-text">Open: 9.30 am - 2.30 pm</p>
+                    
+                    <a href="mailto:booking@grilli.com" class="body-4 slidebar-link">booking@grilli.com</a>
+                
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Booking Request</p>
+                
+                    <a href="tel:+91 9876543210" class="body-1 contact-number hover-underline">+91 9876543210</a>
+                
+                
+                </div>
+        
+            </nav>
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Find A Table</span>
+            
+                <span class="text text-2" aria-hidden="true">Find A Table</span>
+            </a>
+
+            <!-- menu button -->
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        
+        </div>
+
+    </header>
+
+   <main>
+    <article>
+        <!-- Hero -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+
+            <ul class="hero-slider" data-hero-slider>
+
+                <li class="slider-item active" data-hero-slider-item>
+
+                    <div class="slider-bg">
+                        <img src="./images/hero-slider-1.jpg"  width="1880" height="950" alt="" class="img-cover">
+                    </div>
+
+                    <p class="label-2 section-subtitle slider-reveal">Traditional & Hygiene</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                        For the Love of <br>
+                            Delicious food
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+
+                    <a href="#" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">View Our Menu</span>
+
+                        <span class="text text-2" aria-hidden="true" >View Our Menu</span>
+                    </a>
+                </li>
+
+                <li class="slider-item active" data-hero-slider-item>
+
+                    <div class="slider-bg">
+                        <img src="./images/hero-slider-2.jpg"  width="1880" height="950" alt="" class="img-cover">
+                    </div>
+
+                    <p class="label-2 section-subtitle slider-reveal">Delightful Experience</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                        Flavors Inspired by <br>
+                           the Seasons
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+
+                    <a href="#" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">View Our Menu</span>
+
+                        <span class="text text-2" aria-hidden="true" >View Our Menu</span>
+                    </a>
+                </li>
+
+                <li class="slider-item active" data-hero-slider-item>
+
+                    <div class="slider-bg">
+                        <img src="./images/hero-slider-3.jpg"  width="1880" height="950" alt="" class="img-cover">
+                    </div>
+
+                    <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                       Where every Flavor <br>
+                            tells a story
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+
+                    <a href="#" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">View Our Menu</span>
+
+                        <span class="text text-2" aria-hidden="true" >View Our Menu</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                <ion-icon name="chevron-back"></ion-icon>
+            </button>
+        </section>
+    </article>
+   </main>
+
+    <script src="./js/script.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
