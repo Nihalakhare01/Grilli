@@ -78,8 +78,8 @@
 --transition-2: 500ms ease;
 --transition-3: 1000ms ease;
 
---width:285;
---height:336;
+--width:220;
+--height:320;
 
 }
 
@@ -857,8 +857,8 @@ move-anim { animation: move 5s linear infinite; }
 .service-card { overflow: hidden; }
 
 .service-card .has-before {
-  padding-block: 30px;
-  margin-block-end: 26px;
+  padding-block: 20px;
+  margin-block-end: 20px;
   z-index: 1;
 }
 
@@ -866,8 +866,9 @@ move-anim { animation: move 5s linear infinite; }
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 140px;
+  width: 100px;
   height: 100%;
+  border-radius: 10px;
   background-image: url('../images/img-pattern.svg');
   background-position: center;
   background-size: cover;
@@ -883,9 +884,15 @@ move-anim { animation: move 5s linear infinite; }
   transition-delay: 300ms;
 }
 
-.service-card .card-banner { transition: var(--transition-2); }
+.service-card .card-banner { 
+  transition: var(--transition-2);
+  border-radius: 20%;
+ }
 
-.service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05); }
+.service-card:is(:hover, :focus-within) .card-banner {
+   transform: scale(1.05); 
+   border-radius: 10%;
+  }
 
 .service .card-title { margin-block-end: 12px; }
 
@@ -979,7 +986,15 @@ move-anim { animation: move 5s linear infinite; }
 
 .menu .section-title { margin-block-end: 40px; }
 
-.menu .grid-list { margin-block-end: 50px; }
+.menu  .menubtns{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.menu .grid-list { margin-block-end: 50px;  }
+
 
 .menu-card {
   display: flex;
@@ -1078,15 +1093,34 @@ move-anim { animation: move 5s linear infinite; }
     margin-inline: auto;
     border-radius: var(--radius-circle);
     margin-block-end: 15px;
+    animation: image 20s linear infiniite;
   }
   
   .testi .profile-name {
+
     color: var(--gold-crayola);
     font-weight: var(--weight-bold);
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing-3);
   }
   
+  @keyframes image {
+    0%{
+        background-image: url('./images/testi-avatar.jpg');
+    }
+    25%{
+      background-image: url('./images/testi-avatar.jpg');
+  }
+  50%{
+    background-image: url('./images/testi-avatar.jpg');
+}
+75%{
+  background-image: url('./images/testi-avatar.jpg');
+}
+100%{
+  background-image: url('./images/testi-avatar.jpg');
+}
+  }
   
   
   

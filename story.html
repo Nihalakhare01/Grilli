@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>story</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="description" content="This is a Restaurant html template made by us">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svd" type="image/svg+xal">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- preload images -->
+     <link rel="preload"  as="image" href="./images/hero-slider-1.jpg">
+     <link rel="preload"  as="image" href="./images/hero-slider-2.jpg">
+     <link rel="preload"  as="image" href="./images/hero-slider-3.jpg">
+
+
+     <style>
+        p{
+            display: block;
+            margin-top: 15px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-content{
+            position: relative;
+            top: 0;
+            left: 30%;
+        }
+
+        section{
+            height: 1100px;
+        }
+
+        #about{
+            margin-top: -20px;
+        }
+       
+     </style>
+
+    </head>
+<body>
+    <!-- Loader -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Grilli</p>
+    </div>
+
+    <!-- top section  -->
+
+    <div class="topbar">
+        <div class="container">
+            
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                  Restaurant Pallotti, Ashokwan, Nagpur-440012
+                </span>
+            </address>
+
+                <div class="separator"></div>
+
+                <div class="topbar-item item-2">
+                    <div class="icon">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Daily : 8.00 am to 10.00 pm</span>
+                </div>
+
+                <a href="tel:+91 9876543210" class="topbar-item">
+                    <div class="icon">
+                        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">+91 9876543210</span>
+                </a>
+
+                <div class="separator"></div>
+
+                <a href="mailto:+919876543210" class="topbar-item">
+                    <div class="icon">
+                        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">booking@restaurant.com</span>
+                </a>
+        </div>
+    </div>
+
+    <!--  Navbar -->
+
+    <header class="header" data-header>
+
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" width="160" height="50" alt="Grilli-Home">
+            </a>
+
+            <!-- Navbar -->
+            <nav class="navbar " data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" width="160" height="50" alt="Grilli-Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li> 
+
+                    <li class="navbar-item">
+                        <a href="#menu" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#events" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">Events</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="navbar-item">
+                        <a href="#page" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+                            <span class="span">Page</span>
+                        </a>
+                    </li> -->
+
+                    <li class="navbar-item">
+                        <a href="#reserve" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                        <p class="headline-1 navbar-title">Visit Us</p>
+
+                    <address class="body-4"> 
+                      Restaurant Pallotti, Ashokwan <br>
+                          Nagpur-440012
+                    </address>
+
+                    <p class="body-4 navbar-text">Open: 9.30 am - 2.30 pm</p>
+                    
+                    <a href="mailto:booking@restaurant.com" class="body-4 slidebar-link">booking@restaurant.com</a>
+                
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Booking Request</p>
+                
+                    <a href="tel:+91 9876543210" class="body-1 contact-number hover-underline">+91 9876543210</a>
+                
+                
+                </div>
+        
+            </nav>
+
+            <a href="index.html#reserve" class="btn btn-secondary">
+                <span class="text text-1">Find A Table</span>
+            
+                <span class="text text-2" aria-hidden="true">Find A Table</span>
+            </a>
+
+            <!-- menu button -->
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        
+        </div>
+
+    </header>
+
+   <main>
+
+    <article>
+
+        <!-- Hero -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+
+            <ul class="hero-slider" data-hero-slider>
+
+                <li class="slider-item active" data-hero-slider-item>
+
+                    <div class="slider-bg">
+                        <img src="./images/hero-slider-1.jpg"  width="1880" height="950" alt="" class="img-cover">
+                    </div>
+
+                    <p class="label-2 section-subtitle slider-reveal">Traditional & Hygiene</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                        For the Love of <br>
+                            Delicious food
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+
+                    <a href="#menu" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">Read Our Story</span>
+
+                        <span class="text text-2" aria-hidden="true" >Read Our Story</span>
+                    </a>
+                </li>
+
+                <li class="slider-item " data-hero-slider-item>
+
+                    <div class="slider-bg">
+                        <img src="./images/hero-slider-2.jpg"  width="1880" height="950" alt="" class="img-cover">
+                    </div>
+
+                    <p class="label-2 section-subtitle slider-reveal">Delightful Experience</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                        Flavors Inspired by <br>
+                           the Seasons
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+
+                    <a href="#" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">View Our Menu</span>
+
+                        <span class="text text-2" aria-hidden="true" >View Our Menu</span>
+                    </a>
+                </li>
+
+                <li class="slider-item " data-hero-slider-item>
+
+                    <div class="slider-bg">
+                        <img src="./images/hero-slider-3.jpg"  width="1880" height="950" alt="" class="img-cover">
+                    </div>
+
+                    <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                       Where every Flavor <br>
+                            tells a story
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+
+                    <a href="#menu" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">View Our Menu</span>
+
+                        <span class="text text-2" aria-hidden="true" >View Our Menu</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                <ion-icon name="chevron-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+
+            <a href="index.html" class="hero-btn has-after">
+                <img src="./images/hero-icon.png" width="48" height="48" alt="booking icon">
+           
+                <span class="label-2 text-center span">Book A Table</span>
+            </a>
+
+        </section>
+
+      <!-- About -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title" style="text-align: center;">Every Fla vor Tells a Story</h2>
+
+            <p style="width: 100%;">
+              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book It has survived not only five centuries, but also the leap.
+            </p>
+            <p style="width: 768px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in aut amet ipsa vero facere, earum 
+                dignissimos soluta velit officiis ad aspernatur optio quia cupiditate impedit, maxime eius, reiciendis 
+                et vel aliquam sit. Nostrum impedit aliquid eum fuga ipsam! Neque repudiandae adipisci esse architecto 
+                vel quo quod eius blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est consectetur
+                 totam officia architecto ullam dolor rem obcaecati eius omnis!
+            </p>
+            <p style="width: 768px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sint nisi voluptatum ab. Repellat, incidunt
+                 eveniet neque sed architecto culpa veniam similique eius eum, atque ut sapiente voluptate, quia velit?Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Aliquam recusandae, incidunt perferendis impedit eligendi beatae explicabo ipsa, culpa perspiciatis 
+                  minus exercitationem nulla. Eius, animi voluptatum! Placeat quos provident officiis eveniet consequatur, praesentium ducimus officia
+                   repellendus quisquam corporis molestias asperiores incidunt!</p>
+
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem tempore recusandae quo, adipisci dolorum natus obcaecati
+                     atque officiis quos placeat quas. Non laudantium maxime sapiente nisi rem exercitationem? Error?</p>
+
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis at iste omnis alias facilis, pariatur tempora laborum doloribus sit quae tenetur quaerat quibusdam autem voluptatibus assumenda cumque veniam sed.</p>
+
+                     <p class="label-2 section-subtitle" >Our Story</p>
+
+
+          </div>
+
+          <figure class="about-banner">
+
+          </figure>
+
+          <img src="./images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+    <!-- Footer -->
+
+    <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./images/footer-bg.jpg')">
+    <div class="container" style="display: block;">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Restaurant Pallotti, Ashokwan, Nagpur-440012
+          </address>
+
+          <a href="mailto:booking@restaurant.com" class="body-4 contact-link">booking@restaurant.com</a>
+
+          <a href="tel:+919876543210" class="body-4 contact-link">Booking Request : +91-9876543210</a>
+
+          <p class="body-4">
+            Open : 09:00 am - 01:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom" style="display: block;">
+
+        <p class="copyright" style="display: block;">
+          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
+            target="_blank" class="link">codewithsadee</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+    <!-- JS Links -->
+    <script src="./js/script.js"></script>
+    
+    <!-- Links for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
