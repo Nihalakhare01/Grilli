@@ -170,5 +170,19 @@ window.addEventListener("mousemove", function (event) {
 });
 
 
+$(document).ready(function(){
+  $(".content .tab_content").hide();
+  $(".content .tab_content:first-child").show();
+
+  $("ul li").click(function(){
+    
+    $("ul li").removeClass("active");
+    $(this).addClass("active");
+    
+    var current_tab = $(this).attr("data-list");
+    $(".content .tab_content").hide();
+    $("."+current_tab).show();
+  })
+});
 
 
