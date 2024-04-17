@@ -168,7 +168,7 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
-
+ 
 
 $(document).ready(function(){
   $(".content .tab_content").hide();
